@@ -1,6 +1,21 @@
-#include <iostream>
+#include "raylib.h"
 
-int main(int argc, char **argv) {
-    std::cout << "Hello, World!" << std::endl;
+int main(void) {
+    const int screenWidth = 800;
+    const int screenHeight = 450;
+
+    InitWindow(screenWidth, screenHeight, "Fluid Simulator");
+    
+    SetTargetFPS(60);
+
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+            ClearBackground(RAYWHITE);
+            DrawText("Hello, Graphical World!", 190, 200, 20, LIGHTGRAY);
+        EndDrawing();
+    }
+
+    CloseWindow();
+
     return 0;
 }
