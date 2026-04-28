@@ -14,6 +14,7 @@ Tested on Linux (Arch), macOS, and Windows. Should work on any platform with the
 - A C++23 compiler (GCC 13+, Clang 17+, or MSVC 19.38+)
 - Ninja
 - Git
+
 **Linux:**
  
 ```
