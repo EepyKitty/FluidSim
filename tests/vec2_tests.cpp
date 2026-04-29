@@ -20,6 +20,15 @@ TEST_CASE("Vec2 addition") {
     REQUIRE(a + b == Vec2{x1 + x2, y1 + y2});
 }
 
+TEST_CASE("Vec2 subtraction") {
+    auto x1 = GENERATE(take(10, random(-100.0, 100.0)));
+    auto y1 = GENERATE(take(10, random(-100.0, 100.0)));
+    auto x2 = GENERATE(take(10, random(-100.0, 100.0)));
+    auto y2 = GENERATE(take(10, random(-100.0, 100.0)));
+    Vec2 a{x1, y1}, b{x2, y2};
+    REQUIRE(a - b == Vec2{x1 - x2, y1 - y2});
+}
+
 TEST_CASE("dot is commutative") {
     auto x1 = GENERATE(take(10, random(-100.0, 100.0)));
     auto y1 = GENERATE(take(10, random(-100.0, 100.0)));
