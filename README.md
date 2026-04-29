@@ -2,6 +2,8 @@
 
 This program aims to be a highly optimised fluid simulation built in C++. In the process I hope to learn about how to write performant code better.
 
+![Build](https://github.com/EepyKitty/FluidSim/actions/workflows/build.yml/badge.svg)
+
 ## Supported platforms
 
 Tested on Linux (Arch), macOS, and Windows. Should work on any platform with the listed prerequisites.
