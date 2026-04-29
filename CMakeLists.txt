@@ -18,5 +18,6 @@ endif()
 add_executable(fluidsim)
 target_compile_features(fluidsim PRIVATE cxx_std_23)
 target_sources(fluidsim PRIVATE src/main.cpp)
+target_include_directories(fluidsim PRIVATE include)
 
 target_link_libraries(fluidsim PRIVATE raylib)
