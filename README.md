@@ -40,7 +40,7 @@ winget install Kitware.CMake Ninja-build.Ninja Git.Git
 ### Build
  
 ```
-git clone <your-repo-url>
+git clone https://github.com/EepyKitty/FluidSim.git
 cd fluidsim
 cmake -S . -B build -G Ninja
 cmake --build build
